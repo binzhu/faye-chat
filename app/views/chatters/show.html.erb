@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Message:</b>
+  <%= @chatter.message %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @chatter.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_chatter_path(@chatter) %> |
+<%= link_to 'Back', chatters_path %>

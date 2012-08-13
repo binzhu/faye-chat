@@ -1,0 +1,6 @@
+<% broadcast "/chatmessage" do %>
+    $("#message").append("<%= escape_javascript render(@chatter) %>");
+<% end%>
+
+//alert("succeed");
+$("#chatter_message").val("");
